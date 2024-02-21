@@ -3,26 +3,31 @@
 	@font-face {
 		font-family: $font_name;
 		font-display: swap;
-		src: url("../fonts/#{$file_name}.woff2") format("woff2"), url("../fonts/#{$file_name}.woff") format("woff");
+		src: url("../fonts/#{$file_name}.woff2") format("woff2"),
+		url("../fonts/#{$file_name}.woff") format("woff");
 		font-weight: #{$weight};
 		font-style: #{$style};
 	}
 }
+
 //Percent
 @function percent($px, $from) {
 	$result: math.div($px, $from) * 100%;
 	@return $result;
 }
+
 //REM
 @function rem($px) {
 	$result: math.div($px, 16) + rem;
 	@return $result;
 }
+
 //EM
 @function em($px, $current: 16) {
 	$result: math.div($px, $current) + em;
 	@return $result;
 }
+
 //Адаптивное свойство
 
 //Currency
@@ -40,9 +45,10 @@
 }
 
 @mixin adaptiveValue($property, $startSize, $minSize, $widthFrom: $containerWidth, $widthTo: $minWidth, $keepSize: 0) {
-	@if ($widthFrom == $containerWidth and $maxWidthContainer == 0) {
+	@if ($widthFrom ==$containerWidth and $maxWidthContainer ==0) {
 		$widthFrom: $maxWidth;
 	}
+
 	// Брейк-поинты в EM
 	$widthFromMedia: em($widthFrom);
 	$widthToMedia: em($widthTo);
@@ -51,21 +57,47 @@
 	// Источник: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
 	$slope: math.div(($startSize - $minSize), ($widthFrom - $widthTo));
 	$yIntersection: -$widthTo * $slope + $minSize;
-	$flyValue: #{rem($yIntersection)}" + " #{$slope * 100}vw;
+	$flyValue: #{rem($yIntersection)}" + "#{$slope * 100}vw;
 
 	$propertyValue: #{"clamp(" rem($minSize) "," $flyValue "," rem($startSize) ")"};
 
-	@if $widthFrom == $containerWidth or $widthFrom == $maxWidth or $keepSize == 1 or $keepSize == 2 {
+	@if $widthFrom ==$containerWidth or $widthFrom ==$maxWidth or $keepSize ==1 or $keepSize ==2 {
 		@media (min-width: $widthFromMedia) {
 			#{$property}: rem($startSize);
 		}
 	}
+
 	@media (min-width: $widthToMedia) and (max-width: $widthFromMedia) {
 		#{$property}: $propertyValue;
 	}
-	@if $widthTo == $minWidth or $keepSize == 1 or $keepSize == 3 {
+
+	@if $widthTo ==$minWidth or $keepSize ==1 or $keepSize ==3 {
 		@media (max-width: $widthToMedia) {
 			#{$property}: rem($minSize);
 		}
+	}
+}
+
+@mixin _1760 {
+	@media (max-width: 1760px) {
+		@content;
+	}
+}
+
+@mixin _1440 {
+	@media (max-width: 1440px) {
+		@content;
+	}
+}
+
+@mixin _768 {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin _375 {
+	@media (max-width: 768px) {
+		@content;
 	}
 }

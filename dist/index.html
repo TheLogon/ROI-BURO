@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240221193358" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=a1d0b144-aedf-4529-89e3-f0e12c205da0&lang=ru_RU&_v=20240221193358" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- <header class="header">
+	<div class="header__container">
+
+	</div>
+</header> -->
+		<main class="page">
+			<div class="page__container">
+				<section class="page__breadcrumbs breadcrumbs">
+					<a href="#" class="breadcrumbs__link">Главная</a>
+					<span>—</span>
+					<p class="breadcrumbs__link">Контакты</p>
+				</section>
+				<h2 class="page__title">Контакты</h2>
+				<section class="page__contacts contacts">
+					<div class="contacts__map">
+						<div id="map" style="width: 100%; height: 100%"></div>
+					</div>
+					<div class="contacts__note">
+						<div class="contacts__note_icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M12 16V12" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M12 8H12.01" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</div>
+						<p class="contacts__note_text">Вход в офис находится на углу здания со стороны Ленинградского проспекта на пересечении с ул. Балтийская.</p>
+					</div>
+					<div class="contacts__data">
+						<h4 class="contacts__data_title">Контакты</h4>
+						<div class="contacts__data_inner">
+							<div class="contacts__data_row">
+								<div class="contacts__data_wrapper">
+									<div class="contacts__data_col">
+										<p>8-900-000-00-00</p>
+										<p>Москва</p>
+									</div>
+									<div class="contacts__data_col">
+										<p>8-900-000-00-00</p>
+										<p>Россия</p>
+									</div>
+								</div>
+
+								<a href="#" class="contacts__data_copy"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.1429 8H9.85714C8.83147 8 8 8.83147 8 9.85714V19.1429C8 20.1685 8.83147 21 9.85714 21H19.1429C20.1685 21 21 20.1685 21 19.1429V9.85714C21 8.83147 20.1685 8 19.1429 8Z" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M4.85714 16C3.83571 16 3 15.1643 3 14.1429V4.85714C3 3.83571 3.83571 3 4.85714 3H14.1429C15.1643 3 16 3.83571 16 4.85714" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</a>
+							</div>
+							<div class="contacts__data_row">
+								<div class="contacts__data_col">
+									<p>metall-market@mail.ru</p>
+									<p>Ежедневно 9:00 — 18:00</p>
+								</div>
+								<a href="#" class="contacts__data_copy"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.1429 8H9.85714C8.83147 8 8 8.83147 8 9.85714V19.1429C8 20.1685 8.83147 21 9.85714 21H19.1429C20.1685 21 21 20.1685 21 19.1429V9.85714C21 8.83147 20.1685 8 19.1429 8Z" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M4.85714 16C3.83571 16 3 15.1643 3 14.1429V4.85714C3 3.83571 3.83571 3 4.85714 3H14.1429C15.1643 3 16 3.83571 16 4.85714" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</a>
+							</div>
+							<div class="contacts__data_col">
+								<p>Адрес</p>
+								<p>123456, г. Москва, ул. Ленина 3А, помещ. 2-7</p>
+							</div>
+							<div class="contacts__data_col">
+								<p>Время работы</p>
+								<p>Ежедневно 9:00 — 18:00</p>
+							</div>
+							<div class="contacts__data_buttons">
+								<a href="" class="contacts__data_button map">
+									<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.75 17V3" stroke="#00A55A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M6.75 11L12.75 17L18.75 11" stroke="#00A55A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M19.75 21H5.75" stroke="#00A55A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<p>Карта проезда</p>
+								</a>
+								<a href="" class="contacts__data_button phone">
+									<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21.2494 16.4765V19.1862C21.2505 19.4377 21.1988 19.6867 21.0979 19.9172C20.9969 20.1477 20.8488 20.3546 20.663 20.5247C20.4773 20.6947 20.258 20.8242 20.0193 20.9048C19.7805 20.9854 19.5275 21.0153 19.2765 20.9927C16.4915 20.6907 13.8164 19.7409 11.466 18.2197C9.27929 16.8329 7.42534 14.9827 6.0358 12.8003C4.50627 10.4439 3.55442 7.76107 3.25735 4.96915C3.23473 4.71938 3.26447 4.46764 3.34468 4.22996C3.42489 3.99229 3.55381 3.77389 3.72323 3.58866C3.89265 3.40343 4.09885 3.25544 4.32872 3.15411C4.55858 3.05278 4.80707 3.00032 5.05837 3.00009H7.77347C8.21269 2.99577 8.6385 3.151 8.97152 3.43683C9.30455 3.72267 9.52207 4.11961 9.58354 4.55366C9.69814 5.42084 9.91067 6.27229 10.2171 7.09177C10.3388 7.41507 10.3652 7.76642 10.293 8.1042C10.2208 8.44198 10.0531 8.75203 9.8098 8.99761L8.66041 10.1447C9.94877 12.406 11.8248 14.2784 14.0906 15.5642L15.24 14.4171C15.4861 14.1742 15.7967 14.0069 16.1352 13.9348C16.4736 13.8628 16.8257 13.8891 17.1496 14.0106C17.9707 14.3164 18.8239 14.5285 19.6928 14.6429C20.1324 14.7048 20.5339 14.9258 20.8209 15.2639C21.108 15.6019 21.2605 16.0335 21.2494 16.4765Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<p>Заказать звонок</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__gallery gallery">
+					<div class="gallery__slider swiper">
+						<div class="gallery__wrapper swiper-wrapper">
+							<div class="gallery__slide swiper-slide"><picture><source srcset="img/gallery/1.webp" type="image/webp"><img src="img/gallery/1.png" alt="img" /></picture></div>
+							<div class="gallery__slide swiper-slide"><picture><source srcset="img/gallery/2.webp" type="image/webp"><img src="img/gallery/2.png" alt="img" /></picture></div>
+							<div class="gallery__slide swiper-slide"><picture><source srcset="img/gallery/3.webp" type="image/webp"><img src="img/gallery/3.png" alt="img" /></picture></div>
+							<div class="gallery__slide swiper-slide"><picture><source srcset="img/gallery/1.webp" type="image/webp"><img src="img/gallery/1.png" alt="img" /></picture></div>
+							<div class="gallery__slide swiper-slide"><picture><source srcset="img/gallery/2.webp" type="image/webp"><img src="img/gallery/2.png" alt="img" /></picture></div>
+							<div class="gallery__slide swiper-slide"><picture><source srcset="img/gallery/3.webp" type="image/webp"><img src="img/gallery/3.png" alt="img" /></picture></div>
+						</div>
+						<div class="gallery__slider_controls">
+							<div class="gallery__slider_pagination"></div>
+
+							<div class="gallery__slider_arrows arrows-adaptive">
+								<div class="slider__arrow gallery__slider_prev">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 20L16 12L8 4" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="slider__arrow gallery__slider_next">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 20L8 12L16 4" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__team team">
+					<div class="team__offer">
+						<div class="team__offer_wrapper">
+							<h3 class="team__offer_title">Наша команда</h3>
+							<p class="team__offer_descr">Металл-Маркет — это команда профессионалов, влюбленных в свое дело. Уверены, что развитие компании начинается с развития ее сотрудников.</p>
+						</div>
+						<div class="team__slider_arrows arrows-adaptive">
+							<div class="slider__arrow team__slider_prev">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8 20L16 12L8 4" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+							<div class="slider__arrow team__slider_next">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16 20L8 12L16 4" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="team__slider">
+						<div class="team__wrapper swiper-wrapper">
+							<div class="team__slide swiper-slide">
+								<div class="team__slide_img"><picture><source srcset="img/team/1.webp" type="image/webp"><img src="img/team/1.png" alt="img" /></picture></div>
+								<div class="team__slide_data team-data">
+									<p class="team-data__name">
+										Ворончихин <br />
+										Сергей Вячеславович
+									</p>
+									<p class="team-data__post">Директор</p>
+								</div>
+							</div>
+							<div class="team__slide swiper-slide">
+								<div class="team__slide_img"><picture><source srcset="img/team/2.webp" type="image/webp"><img src="img/team/2.png" alt="img" /></picture></div>
+								<div class="team__slide_data team-data">
+									<p class="team-data__name">
+										Ситникова <br />
+										Александра Константиновна
+									</p>
+									<p class="team-data__post">Офис-менеджер</p>
+								</div>
+							</div>
+							<div class="team__slide swiper-slide">
+								<div class="team__slide_img"><picture><source srcset="img/team/3.webp" type="image/webp"><img src="img/team/3.png" alt="img" /></picture></div>
+								<div class="team__slide_data team-data">
+									<p class="team-data__name">
+										Лазарева <br />
+										Валерия Максимовна
+									</p>
+									<p class="team-data__post">Бухгалтер</p>
+								</div>
+							</div>
+							<div class="team__slide swiper-slide">
+								<div class="team__slide_img"><picture><source srcset="img/team/4.webp" type="image/webp"><img src="img/team/4.png" alt="img" /></picture></div>
+								<div class="team__slide_data team-data">
+									<p class="team-data__name">
+										Наумов <br />
+										Илья Семёновичч
+									</p>
+									<p class="team-data__post">Руководитель отдела продаж</p>
+								</div>
+							</div>
+							<div class="team__slide swiper-slide">
+								<div class="team__slide_img"><picture><source srcset="img/team/4.webp" type="image/webp"><img src="img/team/4.png" alt="img" /></picture></div>
+								<div class="team__slide_data team-data">
+									<p class="team-data__name">
+										Наумов <br />
+										Илья Семёновичч
+									</p>
+									<p class="team-data__post">Руководитель отдела продаж</p>
+								</div>
+							</div>
+							<div class="team__slide swiper-slide">
+								<div class="team__slide_img"><picture><source srcset="img/team/4.webp" type="image/webp"><img src="img/team/4.png" alt="img" /></picture></div>
+								<div class="team__slide_data team-data">
+									<p class="team-data__name">
+										Наумов <br />
+										Илья Семёновичч
+									</p>
+									<p class="team-data__post">Руководитель отдела продаж</p>
+								</div>
+							</div>
+							<div class="team__slide swiper-slide">
+								<div class="team__slide_img"><picture><source srcset="img/team/1.webp" type="image/webp"><img src="img/team/1.png" alt="img" /></picture></div>
+								<div class="team__slide_data team-data">
+									<p class="team-data__name">
+										Ворончихин <br />
+										Сергей Вячеславович
+									</p>
+									<p class="team-data__post">Директор</p>
+								</div>
+							</div>
+							<div class="team__slide swiper-slide">
+								<div class="team__slide_img"><picture><source srcset="img/team/2.webp" type="image/webp"><img src="img/team/2.png" alt="img" /></picture></div>
+								<div class="team__slide_data team-data">
+									<p class="team-data__name">
+										Ситникова <br />
+										Александра Константиновна
+									</p>
+									<p class="team-data__post">Офис-менеджер</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="team__slider_pagination"></div>
+					</div>
+				</section>
+				<section class="page__requisites requisites">
+					<div class="requisites__offer">
+						<div class="requisites__offer_wrapper">
+							<h3 class="requisites__offer_title">Реквизиты</h3>
+							<p class="requisites__offer_descr">
+								Металл-Маркет — компания, которая dolor sit amet consectetur. Ac sem nisi nullam mi odio. Justo eu egestas arcu rhoncus et. Eleifend morbi sit proin sed proin. Mattis purus sit malesuada in praesent ac nisi convallis. Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+
+						<a href="#" data-da=".requisites, 1440" class="requisites__offer_btn offer-btn">
+							<div class="offer-btn__icon">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 17V3" stroke="#00A55A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M6 11L12 17L18 11" stroke="#00A55A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M19 21H5" stroke="#00A55A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+							<div class="offer-btn__text">
+								<p>Скачать реквизиты</p>
+								<p>Скачать pdf файл</p>
+							</div>
+						</a>
+					</div>
+					<div class="requisites__table">
+						<div class="requisites__table_body">
+							<div class="requisites__table_row">
+								<div class="requisites__table_col">Полное наименование</div>
+								<div class="requisites__table_col">Металл-Маркет</div>
+							</div>
+							<div class="requisites__table_row">
+								<div class="requisites__table_col">Юридический адрес</div>
+								<div class="requisites__table_col">
+									<p>123456, Россия, Москва, ул. Ленина, 145а, 801</p>
+									<a href="#" class="requisites__table_copy"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M19.1429 8H9.85714C8.83147 8 8 8.83147 8 9.85714V19.1429C8 20.1685 8.83147 21 9.85714 21H19.1429C20.1685 21 21 20.1685 21 19.1429V9.85714C21 8.83147 20.1685 8 19.1429 8Z" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M4.85714 16C3.83571 16 3 15.1643 3 14.1429V4.85714C3 3.83571 3.83571 3 4.85714 3H14.1429C15.1643 3 16 3.83571 16 4.85714" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="requisites__table_row">
+								<div class="requisites__table_col">ИНН</div>
+								<div class="requisites__table_col">1234567890</div>
+							</div>
+							<div class="requisites__table_row">
+								<div class="requisites__table_col">КПП</div>
+								<div class="requisites__table_col">123456789</div>
+							</div>
+							<div class="requisites__table_row">
+								<div class="requisites__table_col">ОГРН</div>
+								<div class="requisites__table_col">1234567890987</div>
+							</div>
+							<div class="requisites__table_row">
+								<div class="requisites__table_col">Расчетный счет</div>
+								<div class="requisites__table_col">12345678909876543210</div>
+							</div>
+							<div class="requisites__table_row">
+								<div class="requisites__table_col">Корреспондентский счет</div>
+								<div class="requisites__table_col">12345678909876543210</div>
+							</div>
+							<div class="requisites__table_row">
+								<div class="requisites__table_col">БИК</div>
+								<div class="requisites__table_col">123456789</div>
+							</div>
+							<div class="requisites__table_row">
+								<div class="requisites__table_col">Банк</div>
+								<div class="requisites__table_col">ПАО «Сбербанк»</div>
+							</div>
+							<div class="requisites__table_row">
+								<div class="requisites__table_col">Директор</div>
+								<div class="requisites__table_col">Лебедев Кирилл Александрович</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<!-- <footer class="footer">
+	<div class="footer__container">
+	</div>
+</footer> -->
+	</div>
+	<script src="js/app.min.js?_v=20240221193358"></script>
+</body>
+
+</html>

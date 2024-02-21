@@ -2,3 +2,41 @@
 // import { isMobile } from "./functions.js";
 // import { formsModules } from "./forms/forms.js";
 
+// Функция ymaps.ready() будет вызвана, когда
+// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+ymaps.ready(init)
+function init() {
+	// Создание карты.
+	var myMap = new ymaps.Map("map", {
+		// Координаты центра карты.
+		// Порядок по умолчанию: «широта, долгота».
+		// Чтобы не определять координаты центра карты вручную,
+		// воспользуйтесь инструментом Определение координат.
+		center: [55.428562, 37.273006],
+		// Уровень масштабирования. Допустимые значения:
+		// от 0 (весь мир) до 19.
+		zoom: 8,
+		controls: [],
+	})
+	var myPlacemark = new ymaps.Placemark(
+		[55.428562, 37.273006],
+		{
+			hintContent: "Собственный значок метки",
+			balloonContent: "Это красивая метка",
+		},
+		{
+			// Опции.
+			// Необходимо указать данный тип макета.
+			iconLayout: "default#image",
+			// Своё изображение иконки метки.
+			iconImageHref: "img/placemark.svg",
+			// Размеры метки.
+			iconImageSize: [56, 64],
+			// Смещение левого верхнего угла иконки относительно
+			// её "ножки" (точки привязки).
+			iconImageOffset: [-5, -38],
+		}
+	)
+	myMap.geoObjects.add(myPlacemark)
+	myMap.behaviors.disable(["scrollZoom"])
+}
